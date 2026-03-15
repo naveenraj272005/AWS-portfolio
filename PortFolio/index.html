@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyPortfolio</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Showcasing my work, skills, and creativity</p>
+    <button onclick="scrollToSection('projects')">View Projects</button>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Hello! I'm a passionate developer skilled in building efficient and creative solutions for web development.</p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h3>Weather App</h3>
+        <p>A web application that displays real-time weather updates for any city using the OpenWeather API.</p>
+        <a href="https://example-weatherapp.com" target="_blank" class="project-link">View Project</a>
+      </div>
+      <!-- Project 2 -->
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A modern and responsive portfolio site to showcase personal projects, skills, and contact details.</p>
+        <a href="https://example-portfolio.com" target="_blank" class="project-link">View Project</a>
+      </div>
+      <!-- Project 3 -->
+      <div class="project-card">
+        <h3>Task Manager</h3>
+        <p>A simple and efficient task management app that lets users add, delete, and mark tasks as complete.</p>
+        <a href="https://example-taskmanager.com" target="_blank" class="project-link">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
